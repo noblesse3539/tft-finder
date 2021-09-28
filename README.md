@@ -1,59 +1,37 @@
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+# 롤토체스 조합 찾아주는 툴
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## 만들게 된 배경
 
-Runs the app in the development mode.<br /> Open
-[http://localhost:3000](http://localhost:3000) to view it in the browser.
+* 나는 레벨 8, 9가 되어도 발동하는 시너지가 세네개 뿐인데, 전쓰트같은 유튜버는 6~7개는 기본으로 발동시키는게 부러웠음 
+* 이런 조합을 찾아주는 사이트가 없었다(롤체지지에도 안나왔다. 근데 만들고 보니 왜 없는지 알게되었지..)
+* 그래서 원하는 시너지를 선택하면 가능한 챔피언들의 조합이 있는지를 찾아주는 툴을 제작하게 됨.
 
-The page will reload if you make edits.<br /> You will also see any lint errors
-in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br /> See the section
-about
-[running tests](https://facebook.github.io/create-react-app/docs/running-tests)
-for more information.
+## 현재까지 모습
 
-### `npm run build`
+![image-20210929023007700](README.assets/image-20210929023007700.png)
 
-Builds the app for production to the `build` folder.<br /> It correctly bundles
-React in production mode and optimizes the build for the best performance.
+## 문제점
 
-The build is minified and the filenames include the hashes.<br /> Your app is
-ready to be deployed!
+* 레벨 증가에 따라 진짜 조합(Combination)의 숫자도 기하급수적으로 늘어나면서 검색시간이 어마무시함...
+* 알고리즘 문제인데 어떻게 해결해야할 지 고민중
 
-See the section about
-[deployment](https://facebook.github.io/create-react-app/docs/deployment) for
-more information.
+## 알고리즘 문제 제작
 
-### `npm run eject`
+* 아이디어를 들키지 않고 문제 해결 방법을 의논하기 위해 실제 알고리즘 문제도 만들어 보았다.
+* [여기를 클릭](./algo.md)
+* 그치만 아직 못찾음...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ToDo
 
-If you aren’t satisfied with the build tool and configuration choices, you can
-`eject` at any time. This command will remove the single build dependency from
-your project.
+* 알고리즘 최적화
+* 시너지에 우선순위를 매기고 우선순위가 높은 강력한 조합을 몇 개만 출력
+* 내가 현재 사용하는 챔피언들을 변수에 포함하여 검색(이 경우 조합의 수가 줄어들어 속도가 빨라질 수는 있음.. 그치만 근본적인 해결은 아닐듯)
+* 롤 api 사용
 
-Instead, it will copy all the configuration files and the transitive
-dependencies (webpack, Babel, ESLint, etc) right into your project so you have
-full control over them. All of the commands except `eject` will still work, but
-they will point to the copied scripts so you can tweak them. At this point
-you’re on your own.
+## 최종목표
 
-You don’t have to ever use `eject`. The curated feature set is suitable for
-small and middle deployments, and you shouldn’t feel obligated to use this
-feature. However we understand that this tool wouldn’t be useful if you couldn’t
-customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* 서비스를 배포하고 광고를 넣어 앉아서 떼돈을 버는 캐시카우를 만들자.
